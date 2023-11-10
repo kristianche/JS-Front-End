@@ -5,8 +5,5 @@ function repeatString (string, repeatCount){
         returnString += string
     }
 
-    return returnString
+    console.log(returnString)
 }
-
-let result = repeatString('abc', 3)
-console.log(result)

@@ -1,15 +1,15 @@
-function reversedNumber(numberAsString){
-    let result = ''
-    let numberAsStringLenght = numberAsString.length
-    for (i = numberAsStringLenght - 1; i >= 0; i--){
-        result += numberAsString[i]
-    }
-
-    return result
-}
-
-
 function palindromeIntegers (array) {
+
+    function reversedNumber(numberAsString){
+        let result = ''
+        let numberAsStringLenght = numberAsString.length
+        for (i = numberAsStringLenght - 1; i >= 0; i--){
+            result += numberAsString[i]
+        }
+    
+        return result
+    }
+    
     let stringArray = []
     let stringElement, numberAsString
 
@@ -20,9 +20,9 @@ function palindromeIntegers (array) {
 
     for (numberAsString of stringArray){
         if (reversedNumber(numberAsString) === numberAsString){
-            console.log('True')
+            console.log('true')
         } else {
-            console.log('False')
+            console.log('false')
         }
     }
 }
